@@ -22,4 +22,12 @@ form.addEventListener('submit', e => {
     })
 })
 
+// Recebendo DONE de main.js
+
+ipcRenderer.on('image:done', () =>{
+    M.toast({
+        html: `Image resized to ${slider.value}% quality`
+    })
+})
+
  
